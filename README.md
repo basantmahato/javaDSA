@@ -9,4 +9,3 @@ This repository is created to understand Java basics and gradually move into mor
 It includes examples and practice code on core Java concepts, structured in easy-to-follow folders.
 
 ## 📂 Repository Structure
-
