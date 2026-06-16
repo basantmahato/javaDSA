@@ -11,7 +11,7 @@ public class frquencyCount {
 
         for (int num : arr) {
 
-            map.put(num, map.getOrDefault(num, 0) + 1);
+            map.merge(num, 1, Integer::sum);
         }
 
         System.out.println(map);
