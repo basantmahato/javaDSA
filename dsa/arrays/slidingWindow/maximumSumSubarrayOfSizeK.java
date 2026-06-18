@@ -19,7 +19,10 @@ public class maximumSumSubarrayOfSizeK {
         // slide window
 
         for (int i = k; i < arr.length; i++) {
-            windowSum = windowSum - arr[i - k] + arr[i];
+            int outgoingElement = arr[i - k]; // The element leaving the left side of the window
+            int incomingElement = arr[i];     // The new element entering the right side of the window
+            
+            windowSum = windowSum - outgoingElement + incomingElement;
 
             if (windowSum > maxSum) {
                 maxSum = windowSum;
