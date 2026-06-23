@@ -1,17 +1,30 @@
 package dsa.linkedList;
 
-import java.util.LinkedList;
+class Node {
+    int data;
+    Node next;
+
+    Node(int data){
+        this.data = data;
+        this.next = null;
+    }
+}
 
 public class syntax {
+    public static void main(String[] args){
 
-    public static void main(String[] args) {
+        Node first = new Node(10);
+        Node second = new Node(20);
+        Node third = new Node(30);
 
-        LinkedList<String> names = new LinkedList<>();
+        first.next = second;
+        second.next = third;
 
-        names.add("iXRISHH");
+        Node temp = first;
 
-        System.out.println(names);
-
+        while(temp != null){
+            System.out.println(temp.data);
+            temp = temp.next;
+        }
     }
-
 }
