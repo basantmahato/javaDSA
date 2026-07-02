@@ -1,3 +1,5 @@
+package dsa.linkedList.questions;
+
 public class InsertInLL {
 
     static class Node {
