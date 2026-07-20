@@ -4,14 +4,14 @@ class Node {
     int data;
     Node next;
 
-    Node(int data){
+    Node(int data) {
         this.data = data;
         this.next = null;
     }
 }
 
 public class syntax {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Node first = new Node(10);
         Node second = new Node(20);
@@ -22,7 +22,7 @@ public class syntax {
 
         Node temp = first;
 
-        while(temp != null){
+        while (temp != null) {
             System.out.println(temp.data);
             temp = temp.next;
         }
